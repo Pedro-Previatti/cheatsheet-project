@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../html-css-cheatsheet-starting/styles.css">
+    <title>Cheatsheet Starting</title>
+</head>
+<body>
+    <h1 class="color">CSS Box Model</h1>
+    <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="Box Model Image">
+   
+    <h2 class="color">padding</h2>
+    <p>The <span class="code">padding</span> sits between the border and the content area and is used to push the content away from the border. Unlike margins, you cannot have a negative padding. Any background applied to your element will display behind the padding.</p>
+
+    <h2 class="color">border</h2>
+    <p>The <span class="code">border</span> is drawn between the margin and the padding of a box. If you are using the standard box model, the size of the border is added to the <span class="code">width</span> and <span class="code">height</span> of the content box. If you are using the alternative box model then the size of the border makes the content box smaller as it takes up some of that available width and height of the element box.</p>
+    
+    <h2 class="color">margin</h2>
+    <p>The <span class="code">margin</span> is an invisible space around your box. It pushes other elements away from the box. Margins can have positive or negative values. Setting a negative margin on one side of your box can cause it to overlap other things on the page. Whether you are using the standard or alternative box model, the margin is always added after the size of the visible box has been calculated.</p>
+
+    <h2 class="color">position</h2>
+    <p>The <span class="code">position</span> CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.</p>
+    <h3 class="color">Values</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="code">static</span>
+                </td>
+                <td>The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">relative</span>
+                </td>
+                <td>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">absolute</span>
+                </td>
+                <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">fixed</span>
+                </td>
+                <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), or the will-change property is set to transform, in which case that ancestor behaves as the containing block. </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">sticky</span>
+                </td>
+                <td>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="color">display</h2>
+    <p>Formally, the <span class="code">display</span> property sets an element's inner and outer display types. The outer type sets an element's participation in flow layout; the inner type sets the layout of children.</p>
+    <h3 class="color">Main Values</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="code">block</span>
+                </td>
+                <td>The element generates a block element box, generating line breaks both before and after the element when in the normal flow.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">inline</span>
+                </td>
+                <td>The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">inline-block</span>
+                </td>
+                <td>The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">flex</span>
+                </td>
+                <td>The element behaves like a block element and lays out its content according to the flexbox model.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">inline-flex</span>
+                </td>
+                <td>The element behaves like an inline element and lays out its content according to the flexbox model.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">grid</span>
+                </td>
+                <td>The element behaves like a block element and lays out its content according to the grid model.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">inline-grid</span>
+                </td>
+                <td>The element behaves like an inline element and lays out its content according to the grid model.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">flow-root</span>
+                </td>
+                <td>The element generates a block element box that establishes a new block formatting context, defining where the formatting root lies.</td>
+            </tr>
+        </tbody>
+    </table>
+   
+    <h2 class="color">z-index</h2>
+    <p>The <span class="code">z-index</span> CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.</p>
+    <h3 class="color">Values</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="code">auto</span>
+                </td>
+                <td>The box does not establish a new local stacking context. The stack level of the generated box in the current stacking context is 0.</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">integer</span>
+                </td>
+                <td>This integer is the stack level of the generated box in the current stacking context. The box also establishes a local stacking context. This means that the z-indexes of descendants are not compared to the z-indexes of elements outside this element.</td>
+            </tr>
+        </tbody>
+    </table>
+   
+    <h2 class="color">float</h2>
+    <p>The <span class="code">float</span> CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).</p>
+    
+    <h2 class="color">clear</h2>
+    <p>The <span class="code">clear</span> CSS property sets whether an element must be moved below (cleared) floating elements that precede it. The clear property applies to floating and non-floating elements.</p>
+
+</body>
+</html>
